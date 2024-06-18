@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="609.0" prefWidth="982.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sceneController">
+   <children>
+      <Label layoutX="442.0" layoutY="197.0" prefHeight="107.0" prefWidth="273.0" text="Username :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="582.0" layoutY="410.0" mnemonicParsing="false" onAction="#switchAdminLogIn" prefHeight="44.0" prefWidth="164.0" text="Log In" textFill="#224c75">
+         <font>
+            <Font name="Futura Medium" size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" layoutX="619.0" layoutY="224.0" prefHeight="53.0" prefWidth="263.0" promptText="Username">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <ImageView fitHeight="650.0" fitWidth="382.0" layoutX="-2.0" layoutY="-16.0">
+         <image>
+            <Image url="@../Images/hospital-image-login.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="442.0" layoutY="283.0" prefHeight="107.0" prefWidth="273.0" text="Password : " textFill="#2b2b2b">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="895.0" layoutY="9.0" mnemonicParsing="false" onAction="#switchHomeScreen" prefHeight="44.0" prefWidth="68.0" styleClass="back">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="58.0" styleClass="back">
+               <image>
+                  <Image url="@../Images/back_button.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <PasswordField fx:id="password" layoutX="619.0" layoutY="315.0" onAction="#switchAdminLogIn" prefHeight="53.0" prefWidth="263.0" promptText="Password">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </PasswordField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="444.0" layoutY="140.0" prefHeight="47.0" prefWidth="440.0" text="ADMIN LOG IN" textFill="RED">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
